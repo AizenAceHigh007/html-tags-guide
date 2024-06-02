@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Essentials: A Quick Reference Guide</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+            <div class="nav-links" id="nav-links">
+                <a href="#basic-tags">Basic Tags</a>
+                <a href="#text-formatting-tags">Text Formatting Tags</a>
+                <a href="#semantic-tags">Semantic Tags</a>
+                <a href="#list-tags">List Tags</a>
+                <a href="#form-tags">Form Tags</a>
+                <a href="#table-tags">Table Tags</a>
+                <a href="#media-tags">Media Tags</a>
+                <a href="#metadata-tags">Metadata Tags</a>
+                <a href="#programming-tags">Programming Tags</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    <!--Basic Tags Section-->
+    <section id="basic-tags">
+        <h2>Basic HTML Tags</h2>
+        <div class="container">
+            <table>
+            <thead>
+                <tr>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;html&gt;</td>
+                    <td>HTML</td>
+                    <td>The root element of an HTML document.</td>
+                </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td>Head</td>
+                    <td>Contains meta-information about the document.</td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;</td>
+                    <td>Title</td>
+                    <td>Sets the title of the document, shown in the browser's title bar of tab.</td>
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                    <td>Body</td>
+                    <td>Contains the content of an HTML document, including text, images, links, etc.</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </section>
+
+    <!--Text Formatting Tags Section-->
+    <section id="text-tags">
+        <h2>Text Formatting Tags</h2>
+        <div class="container">
+            <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Paragraph</td>
+                    <td>Defines a paragraph.</td>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>Line Break</td>
+                    <td>Inserts a single line break.</td>
+                </tr>
+                <tr>
+                    <td>&lt;hr&gt;</td>
+                    <td>Horizontal Rule</td>
+                    <td>Represents a thematic break or a horizontal rule.</td>
+                </tr>
+                <tr>
+                    <td>&lt;b&lt;</td>
+                    <td>Bold</td>
+                    <td>Makes the text bold.</td>
+                </tr>
+                <tr>
+                    <td>&lt;i&gt;</td>
+                    <td>Italic</td>
+                    <td>Makes the text italic.</td>
+                </tr>
+                <tr>
+                    <td>&lt;u&gt;</td>
+                    <td>Underline</td>
+                    <td>Underlines the text.</td>
+                </tr>
+                <tr>
+                    <td>&lt;strong&gt;</td>
+                    <td>Strong</td>
+                    <td>Indicates strong importance, usually rendered in bold.</td>
+                </tr>
+                <tr>
+                    <td>&lt;em&gt;</td>
+                    <td>Emphasis</td>
+                    <td>Indicates emphasized text, usually rendered in italic.</td>
+                </tr>
+                <tr>
+                    <td>&lt;small&gt;</td>
+                    <td>Small</td>
+                    <td>Renders text in a smaller font size.</td>
+                </tr>
+                <tr>
+                    <td>&lt;mark&gt;</td>
+                    <td>Mark</td>
+                    <td>Highlights text.</td>
+                </tr>
+                <tr>
+                    <td>&lt;del&gt;</td>
+                    <td>Deleted Text</td>
+                    <td>Indicates text that has been deleted.</td>
+                </tr>
+                <tr>
+                    <td>&lt;ins&gt;</td>
+                    <td>Inserted Text</td>
+                    <td>Indicates text that has been inserted.</td>
+                </tr>
+                <tr>
+                    <td>&lt;sub&gt;</td>
+                    <td>Subscript</td>
+                    <td>Defines subscripted text.</td>
+                </tr>
+                <tr>
+                    <td>&lt;sup&gt;</td>
+                    <td>Superscript</td>
+                    <td>Defines superscripted text.</td>
+                </tr>
+                <tr>
+                    <td>&lt;blockquote&gt;</td>
+                    <td>Blockquote</td>
+                    <td>Defines a section that is quoted from another source.</td>
+                </tr>
+                <tr>
+                    <td>&lt;q&gt;</td>
+                    <td>Quote</td>
+                    <td>Defines a short inline quotation.</td>
+                </tr>
+                <tr>
+                    <td>&lt;code&gt;</td>
+                    <td>Code</td>
+                    <td>Defines a fragment of computer code.</td>
+                </tr>
+                <tr>
+                    <td>&lt;pre&gt;</td>
+                    <td>Preformatted</td>
+                    <td>Defines preformatted text, typically displayed in a monospace font.</td>
+                </tr>
+                <tr>
+                    <td>&lt;abbr&gt;</td>
+                    <td>Abbreviation</td>
+                    <td>Represents an abbreviation or acronym.</td>
+                </tr>
+                <tr>
+                    <td>&lt;citation&gt;</td>
+                    <td>Citation</td>
+                    <td>Cites a title of a work.</td>
+                </tr>
+                <tr>
+                    <td>&lt;dfn&gt;</td>
+                    <td>Definition</td>
+                    <td>Represents the defining instance of a term.</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!--Semantic Tags Section-->
+    <section id="semantic-tags">
+        <h2>Semantic Tags</h2>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;header&gt;</td>
+                        <td>Header</td>
+                        <td>Represents introductory content, typically a group of introductory or navigational aids.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;footer&gt;</td>
+                        <td>Footer</td>
+                        <td>Represents the footer for a section or document.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;main&gt;</td>
+                        <td>Main</td>
+                        <td>Spcifies the main content of a document.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;section&gt;</td>
+                        <td>Section</td>
+                        <td>Defines a section in a document.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;article&gt;</td>
+                        <td>Article</td>
+                        <td>Represents an independent piece of content of a document, such as a blog post.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;aside&gt;</td>
+                        <td>Aside</td>
+                        <td>Defines content aside from the main content, like a sidebar.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;nav&gt;</td>
+                        <td>Navigation</td>
+                        <td>Defines a set of navigation links.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;figure&gt;</td>
+                        <td>Figure</td>
+                        <td>Specifies self-contained content, such as illustrations, diagrams, photos, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;figcaption&gt;</td>
+                        <td>Figcaption</td>
+                        <td>Defines a caption for a &lt;figure&gt; element.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!--List Tags-->
+    <section id="list-tags">
+        <h2>List Tags</h2>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;ul&gt;</td>
+                        <td>Unordered List</td>
+                        <td>Defines a unordered (bulleted) list.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ol&gt;</td>
+                        <td>Ordered List</td>
+                        <td>Defines an ordered (numbered) list.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;li&gt;</td>
+                        <td>List Item</td>
+                        <td>Defines a list item.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;dl&gt;</td>
+                        <td>Description List</td>
+                        <td>Defines a description list.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;dt&gt;</td>
+                        <td>Description Term</td>
+                        <td>Represents a term in a description list.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;dd&gt;</td>
+                        <td>Description Definition</td>
+                        <td>Describes a term in a description list.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!--Form Tags-->
+    <section id="form-tags">
+        <h2>Form Tags</h2>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;form&gt;</td>
+                        <td>Form</td>
+                        <td>Represents a document section containing interactive controls for submitting data.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input&gt;</td>
+                        <td>Input</td>
+                        <td>Defines an input control.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;textarea&gt;</td>
+                        <td>Textarea</td>
+                        <td>Defines a multiline input control (text area).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;button&gt;</td>
+                        <td>Button</td>
+                        <td>Defines a clickable button.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;select&gt;</td>
+                        <td>Select</td>
+                        <td>Defines a drop-down list.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;option&gt;</td>
+                        <td>Option</td>
+                        <td>Defines an option in a drop-down list.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;optgroup&gt;</td>
+                        <td>Option Group</td>
+                        <td>Groups options in a drop-down list.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;label&gt;</td>
+                        <td>Label</td>
+                        <td>Defines a label for an &lt;input&gt; element.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;fieldset&gt;</td>
+                        <td>Fieldset</td>
+                        <td>Groups related elements in a form.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;legend&gt;</td>
+                        <td>Legend</td>
+                        <td>Defines a caption for a &lt;fieldset&gt; element.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;datalist&gt;</td>
+                        <td>Data List</td>
+                        <td>Specifies a list of pre-defined options for input controls.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;output&gt;</td>
+                        <td>Output</td>
+                        <td>Represents the result of a calculation or user action.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!--Table Tags-->
+    <section id="table-tags">
+        <h2>Table Tags</h2>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;table&gt;</td>
+                        <td>Table</td>
+                        <td>Defines a table.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;caption&gt;</td>
+                        <td>Caption</td>
+                        <td>Specifies a caption for a table.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;thead&gt;</td>
+                        <td>Table Head</td>
+                        <td>Groups the header content in a table.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tbody&gt;</td>
+                        <td>Table Body</td>
+                        <td>Groups the body content in a table.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tfoot&gt;</td>
+                        <td>Table Foot</td>
+                        <td>Groups the footer content in a table.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tr&gt;</td>
+                        <td>Table Row</td>
+                        <td>Defines a row in a table.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;th&gt;</td>
+                        <td>Table Header</td>
+                        <td>Defines a header cell in a table.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;td&gt;</td>
+                        <td>Table Data</td>
+                        <td>Defines a cell in a table.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;col&gt;</td>
+                        <td>Column</td>
+                        <td>Specifies column properties for each column within a &lt;colgroup&gt; element.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;colgroup&gt;</td>
+                        <td>Column Group</td>
+                        <td>Specifies a group of one or more columns in a table for formatting.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!--Media Tags-->
+    <section id="media-tags">
+        <h2>Media Tags</h2>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>Image</td>
+                        <td>Embeds an image.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;audio&gt;</td>
+                        <td>Audio</td>
+                        <td>Embeds sound content.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;video&gt;</td>
+                        <td>Video</td>
+                        <td>Embeds video content.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;source&gt;</td>
+                        <td>Source</td>
+                        <td>Specifies multiple media resources for &lt;audio&gt; and &lt;video&gt; element.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;track&gt;</td>
+                        <td>Track</td>
+                        <td>Specifies text tracks for &lt;video&gt; and &lt;audio&gt; elements.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;embed&gt;</td>
+                        <td>Embed</td>
+                        <td>Embeds external content (e.g., a plugin).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;object&gt;</td>
+                        <td>Object</td>
+                        <td>Defines an embedded object.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;param&gt;</td>
+                        <td>Parameter</td>
+                        <td>Defines parameters for an &lt;object&gt; element.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;iframe&gt;</td>
+                        <td>Iframe</td>
+                        <td>Embeds another HTML page within the current page.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;map&gt;</td>
+                        <td>Image Map</td>
+                        <td>Defines an image map (with clickable areas).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;area&gt;</td>
+                        <td>Area</td>
+                        <td>Defines a clickable area inside an image map.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;canvas&gt;</td>
+                        <td>Canvas</td>
+                        <td>Used to draw graphics, on the fly, via scripting (usually JavaScript).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;svg&gt;</td>
+                        <td>SVG</td>
+                        <td>Defines vector-based graphics for the web.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;figure&gt;</td>
+                        <td>Figure</td>
+                        <td>Specifies self-contained content, such as illustrations, diagrams, photos, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;figcaption&gt;</td>
+                        <td>Figure Caption</td>
+                        <td>Defines a caption for a &lt;figure&gt; element.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!--Metadata Tags-->
+    <section id="metadata-tags">
+        <h2>Metadata Tags</h2>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;meta&gt;</td>
+                        <td>Meta</td>
+                        <td>Defines metadata about an HTML document (e.g., character set, description, keywords, author, and viewport settings).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;link&gt;</td>
+                        <td>Link</td>
+                        <td>Defines the relationship between the current document and an external resource (most used to link to stylesheets).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;style&gt;</td>
+                        <td>Style</td>
+                        <td>Contains style information (CSS) for a document.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;base&gt;</td>
+                        <td>Base</td>
+                        <td>Specifies the base URL for all relative URLs in a document.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!--Programming Tags-->
+    <section id="programming-tags">
+        <h2>Programming Tags</h2>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;script&gt;</td>
+                        <td>Script</td>
+                        <td>Embeds executable code or a reference to an external script.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;noscript&gt;</td>
+                        <td>No Script</td>
+                        <td>Defines alternative content to be displayed if a script is not executed.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!--Back to top button-->
+    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    </main>
+
+    <!--Footer Section-->
+    <footer>
+        <div class="social-links">
+            <p>Follow me on:</p>
+            <div>
+                <a href="https://www.linkedin.com/in/gaurav-singh-rawat521" target="_blank" class="social-icons"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.github.com/AizenAceHigh007" target="_blank" class="social-icons"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/aizenacehigh_007" target="_blank" class="social-icons"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p id="copyright">&copy; 2024 AizenAceHigh007. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
